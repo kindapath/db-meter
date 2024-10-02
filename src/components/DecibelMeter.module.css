@@ -1,0 +1,44 @@
+.decibelMeter {
+  font-family: Arial, sans-serif;
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+  text-align: center;
+}
+
+.mainInputs {
+  margin-top: 20px;
+}
+
+.visuals {
+  height: 5px;
+  margin: 10px auto;
+}
+
+.inputs {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 20px;
+}
+
+.input {
+  width: 45%;
+}
+
+.slider {
+  width: 100%;
+  margin-top: 10px;
+}
+
+.startButton {
+  background-color: #4caf50;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+}

@@ -1,17 +1,36 @@
-# db-meter
+This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
 
-https://takispig.github.io/db-meter/<br><br>
-Simple Webinterface to estimate the noise level in Decibels.  
-Values are not precise, but mainly represent differencies in noise levels in a short period of time.
+## Getting Started
 
-![Website](/demo.png)
+First, run the development server:
 
-## Algorithm
-In this project I tried to get the noise level for different frequencies, take the average out of them, and then again take the average of all such values within the time intervall of a specific refresh_rate (in msec). Afterwards I applied the formula $20*log10(noiseValue)$ to get a number indication near to Decibel, and added the offset value.  
+```bash
+npm run dev
+# or
+yarn dev
+# or
+pnpm dev
+# or
+bun dev
+```
 
-## Offset & Refresh Rate
-To cope with the environmental noises and different microphone sensitivities, I have set an adjustable offset value, which just increases or decreases the dBs. As default, the value of 30 has been chosen, as it yields the best results (at least for me).  
-Furthermore, the refresh rate for the dBs is adjustable too (default 1 sec).  
+Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-## Technnical Details
-For the Webinterface has been used HTML5, CSS and JavaScript. The code for the Decibel estimation has been written in JavaScript with Web Audio API, and more specific with the AudioContext Interface.
+You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+
+This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+
+## Learn More
+
+To learn more about Next.js, take a look at the following resources:
+
+- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
+- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+
+You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+
+## Deploy on Vercel
+
+The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+
+Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
